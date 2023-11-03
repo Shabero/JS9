@@ -7,18 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <div style="width: 300px; margin: 0 auto " class=" d-flex flex-column  align-items-center gap-4">
-        <input class="form-control" type="text" id="num1">
-        <input class="form-control" type="number" id="num2">
-<!--        <h3 id="res">0</h3>-->
-        <button class="btn btn-dark" id="btn-submit">Submit</button>
+    <div class="calculator">
+        <input id="numberInput" type="number" placeholder="Введите число">
+        <button id="addButton">Добавить</button>
+        <input id="multiplyInput" type="number" placeholder="Умножить на">
+        <button id="multiplyButton">Умножить</button>
+        <div id="result">Результат: 0</div>
     </div>
-
-
-
+    <div class="custom-alert" id="customAlert">
+        <span class="close-button" id="closeButton">x</span>
+        <p id="alertText"></p>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
